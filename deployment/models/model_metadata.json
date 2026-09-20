@@ -1,0 +1,224 @@
+{
+ "model_name": "LightGBM - leakage-safe baseline (CLEAN_P2, seed 42)",
+ "model_version": "lgbm-cleanP2-seed42-57f",
+ "model_file": "models/final_model.txt",
+ "built_at": "2026-09-19 18:51:59",
+ "model_type": "LightGBM gradient-boosted trees (binary)",
+ "n_features": 57,
+ "n_trees": 14,
+ "n_train": 18090,
+ "n_validation": 3876,
+ "n_test": 3877,
+ "train_prevalence": 0.13344389165284687,
+ "training_dataset": "model_ready/ad_conversion_3yr_anchor_dataset.csv (baseline rows; pre-imputation values reconstructed via *_was_imputed flags; participant-level train/validation/test split unchanged)",
+ "target_definition": "Project's 3-year conversion outcome: 1 = a new Alzheimer's etiologic diagnosis is recorded within 3 years after the baseline visit in a participant without it at baseline; 0 = a determinate non-converting follow-up observation within the window.",
+ "hyperparameters": {
+  "n_estimators": 500,
+  "learning_rate": 0.05,
+  "num_leaves": 31,
+  "max_depth": 6,
+  "min_child_samples": 20,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.8,
+  "reg_alpha": 0.1,
+  "reg_lambda": 0.1,
+  "verbosity": -1,
+  "objective": "binary",
+  "metric": "average_precision",
+  "random_state": 42
+ },
+ "class_weighting": false,
+ "resampling": "none",
+ "calibration": "none - raw LightGBM probabilities",
+ "operating_threshold": 0.16157262264614966,
+ "threshold_criterion": "F1-maximising threshold on the VALIDATION set (frozen before the test set was read)",
+ "validation": {
+  "pr_auc": 0.4337357372695918,
+  "roc_auc": 0.7954912550536881,
+  "brier": 0.10071178717090512,
+  "precision": 0.3906856403622251,
+  "recall": 0.5841392649903289,
+  "f1": 0.46821705426356586,
+  "flagged_share": 0.19943240454076366
+ },
+ "test": {
+  "pr_auc": 0.42234525232877074,
+  "roc_auc": 0.7900069081968457,
+  "brier": 0.10143801263957052,
+  "precision": 0.38997214484679665,
+  "recall": 0.5405405405405406,
+  "f1": 0.45307443365695793,
+  "flagged_share": 0.1851947381996389
+ },
+ "three_seed_mean_reference": {
+  "validation_pr_auc": 0.4326,
+  "test_pr_auc": 0.4269,
+  "seeds": [
+   42,
+   123,
+   2026
+  ]
+ },
+ "calibration_deciles": {
+  "validation": [
+   {
+    "decile": 1,
+    "n": 391,
+    "mean_predicted": 0.08354658045358075,
+    "observed_rate": 0.030690537084398978
+   },
+   {
+    "decile": 2,
+    "n": 385,
+    "mean_predicted": 0.08839769298675619,
+    "observed_rate": 0.02857142857142857
+   },
+   {
+    "decile": 3,
+    "n": 387,
+    "mean_predicted": 0.0924434970797184,
+    "observed_rate": 0.028423772609819122
+   },
+   {
+    "decile": 4,
+    "n": 388,
+    "mean_predicted": 0.09859611568502995,
+    "observed_rate": 0.05154639175257732
+   },
+   {
+    "decile": 5,
+    "n": 387,
+    "mean_predicted": 0.10517548913532575,
+    "observed_rate": 0.06976744186046512
+   },
+   {
+    "decile": 6,
+    "n": 388,
+    "mean_predicted": 0.11309636439866576,
+    "observed_rate": 0.0979381443298969
+   },
+   {
+    "decile": 7,
+    "n": 387,
+    "mean_predicted": 0.12451858221211057,
+    "observed_rate": 0.10335917312661498
+   },
+   {
+    "decile": 8,
+    "n": 388,
+    "mean_predicted": 0.14258465526306746,
+    "observed_rate": 0.14432989690721648
+   },
+   {
+    "decile": 9,
+    "n": 387,
+    "mean_predicted": 0.19234549048008262,
+    "observed_rate": 0.27648578811369506
+   },
+   {
+    "decile": 10,
+    "n": 388,
+    "mean_predicted": 0.3036889304851391,
+    "observed_rate": 0.5025773195876289
+   }
+  ],
+  "test": [
+   {
+    "decile": 1,
+    "n": 388,
+    "mean_predicted": 0.08368683920336134,
+    "observed_rate": 0.02577319587628866
+   },
+   {
+    "decile": 2,
+    "n": 388,
+    "mean_predicted": 0.0884300287607072,
+    "observed_rate": 0.02577319587628866
+   },
+   {
+    "decile": 3,
+    "n": 388,
+    "mean_predicted": 0.09272649643221637,
+    "observed_rate": 0.041237113402061855
+   },
+   {
+    "decile": 4,
+    "n": 387,
+    "mean_predicted": 0.09882211773890151,
+    "observed_rate": 0.046511627906976744
+   },
+   {
+    "decile": 5,
+    "n": 388,
+    "mean_predicted": 0.1060045023456068,
+    "observed_rate": 0.08247422680412371
+   },
+   {
+    "decile": 6,
+    "n": 387,
+    "mean_predicted": 0.11358096880768936,
+    "observed_rate": 0.082687338501292
+   },
+   {
+    "decile": 7,
+    "n": 388,
+    "mean_predicted": 0.12433853117206377,
+    "observed_rate": 0.14175257731958762
+   },
+   {
+    "decile": 8,
+    "n": 387,
+    "mean_predicted": 0.14005127653377045,
+    "observed_rate": 0.13695090439276486
+   },
+   {
+    "decile": 9,
+    "n": 388,
+    "mean_predicted": 0.1850566022559843,
+    "observed_rate": 0.2422680412371134
+   },
+   {
+    "decile": 10,
+    "n": 388,
+    "mean_predicted": 0.2993767587089987,
+    "observed_rate": 0.5103092783505154
+   }
+  ]
+ },
+ "era_calibration": {
+  "validation": {
+   "pre-2015 baseline": {
+    "n": 2233,
+    "observed_rate": 0.1715181370353784,
+    "mean_predicted": 0.15389539196031385
+   },
+   "2015+ baseline": {
+    "n": 1643,
+    "observed_rate": 0.0815581253804017,
+    "mean_predicted": 0.10800194269613468
+   }
+  },
+  "test": {
+   "pre-2015 baseline": {
+    "n": 2248,
+    "observed_rate": 0.17437722419928825,
+    "mean_predicted": 0.15191483645023873
+   },
+   "2015+ baseline": {
+    "n": 1629,
+    "observed_rate": 0.07734806629834254,
+    "mean_predicted": 0.10742035151442064
+   }
+  }
+ },
+ "matches_recorded_selected_model": true,
+ "versions": {
+  "python": "3.12.3",
+  "lightgbm": "4.7.0",
+  "pandas": "3.0.2",
+  "numpy": "2.4.4",
+  "sklearn": "1.8.0"
+ },
+ "disclaimer": "Research/model demonstration. Not a diagnostic device."
+}

@@ -1,0 +1,869 @@
+{
+ "feature_order": [
+  "age",
+  "alcohol_abuse_history",
+  "alcohol_binge_frequency",
+  "alcohol_drinks_per_occasion",
+  "alcohol_frequency_12mo",
+  "alcohol_frequency_3mo",
+  "anxiety",
+  "arthritis_any",
+  "bmi",
+  "bowel_incontinence",
+  "bp_diastolic",
+  "bp_diastolic_avg",
+  "bp_systolic",
+  "bp_systolic_avg",
+  "cancer_recent",
+  "chronic_kidney_disease",
+  "copd_asthma_combined",
+  "depression",
+  "education_level",
+  "education_years",
+  "ethnicity_hispanic",
+  "hearing_normal_1yes",
+  "height_in",
+  "hyperlipidemia",
+  "hypertension",
+  "independence_level",
+  "living_situation",
+  "major_depressive_disorder",
+  "marital_status",
+  "migraine_chronic_headache",
+  "obesity_bmi30plus",
+  "osteoarthritis",
+  "parkinsonism_pd",
+  "peripheral_vascular_disease",
+  "physical_activity_hrs_wk",
+  "race",
+  "residence_type",
+  "rheumatoid_arthritis",
+  "seizures_epilepsy",
+  "sex",
+  "sleep_apnea",
+  "sleep_apnea_clinician",
+  "smoking_current_30days",
+  "smoking_ever_100cigs",
+  "smoking_packs_per_day_category",
+  "smoking_quit_age",
+  "smoking_status_derived",
+  "smoking_years",
+  "stroke",
+  "thyroid_disease",
+  "traumatic_brain_injury",
+  "type_2_diabetes",
+  "urinary_incontinence",
+  "vision_normal_1yes",
+  "vitamin_b12_deficiency",
+  "weight_lb",
+  "cognitive_status"
+ ],
+ "numeric": [
+  "age",
+  "bmi",
+  "bp_diastolic",
+  "bp_diastolic_avg",
+  "bp_systolic",
+  "bp_systolic_avg",
+  "education_years",
+  "height_in",
+  "smoking_quit_age",
+  "smoking_years",
+  "weight_lb"
+ ],
+ "categorical": [
+  "alcohol_abuse_history",
+  "alcohol_binge_frequency",
+  "alcohol_drinks_per_occasion",
+  "alcohol_frequency_12mo",
+  "alcohol_frequency_3mo",
+  "anxiety",
+  "arthritis_any",
+  "bowel_incontinence",
+  "cancer_recent",
+  "chronic_kidney_disease",
+  "copd_asthma_combined",
+  "depression",
+  "education_level",
+  "ethnicity_hispanic",
+  "hearing_normal_1yes",
+  "hyperlipidemia",
+  "hypertension",
+  "independence_level",
+  "living_situation",
+  "major_depressive_disorder",
+  "marital_status",
+  "migraine_chronic_headache",
+  "obesity_bmi30plus",
+  "osteoarthritis",
+  "parkinsonism_pd",
+  "peripheral_vascular_disease",
+  "physical_activity_hrs_wk",
+  "race",
+  "residence_type",
+  "rheumatoid_arthritis",
+  "seizures_epilepsy",
+  "sex",
+  "sleep_apnea",
+  "sleep_apnea_clinician",
+  "smoking_current_30days",
+  "smoking_ever_100cigs",
+  "smoking_packs_per_day_category",
+  "smoking_status_derived",
+  "stroke",
+  "thyroid_disease",
+  "traumatic_brain_injury",
+  "type_2_diabetes",
+  "urinary_incontinence",
+  "vision_normal_1yes",
+  "vitamin_b12_deficiency",
+  "cognitive_status"
+ ],
+ "numeric_medians": {
+  "age": 70.0,
+  "bmi": 26.7,
+  "bp_diastolic": 76.0,
+  "bp_diastolic_avg": 78.0,
+  "bp_systolic": 132.0,
+  "bp_systolic_avg": 130.5,
+  "education_years": 16.0,
+  "height_in": 65.5,
+  "smoking_quit_age": 40.0,
+  "smoking_years": 20.0,
+  "weight_lb": 166.0
+ },
+ "categorical_vocab": {
+  "alcohol_abuse_history": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "alcohol_binge_frequency": [
+   "Less than once a month",
+   "Missing",
+   "Monthly",
+   "Never",
+   "Not applicable"
+  ],
+  "alcohol_drinks_per_occasion": [
+   "1-2 drinks",
+   "3-4 drinks",
+   "Missing",
+   "Not applicable"
+  ],
+  "alcohol_frequency_12mo": [
+   "2-3 times a week",
+   "2-4 times a month",
+   "4 or more times a week",
+   "Missing",
+   "Monthly or less",
+   "Never"
+  ],
+  "alcohol_frequency_3mo": [
+   "A few times a week",
+   "About once a month",
+   "About once a week",
+   "Daily or almost daily",
+   "Less than once a month",
+   "Missing",
+   "Not applicable - no alcohol consumption in the last three months"
+  ],
+  "anxiety": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "arthritis_any": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "bowel_incontinence": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "cancer_recent": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "chronic_kidney_disease": [
+   "Absent",
+   "Missing",
+   "Recent/Active"
+  ],
+  "copd_asthma_combined": [
+   "Absent",
+   "Missing",
+   "Recent/Active"
+  ],
+  "depression": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "education_level": [
+   "Bachelor's degree",
+   "Doctorate",
+   "High school or GED",
+   "Less than high school",
+   "Master's degree",
+   "Missing",
+   "Some college"
+  ],
+  "ethnicity_hispanic": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "hearing_normal_1yes": [
+   "Missing",
+   "No (impaired)",
+   "Yes (normal)"
+  ],
+  "hyperlipidemia": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "hypertension": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "independence_level": [
+   "Able to live independently",
+   "Completely dependent",
+   "Missing",
+   "Other or unknown",
+   "Requires assistance-basic activities",
+   "Requires assistance-complex activities"
+  ],
+  "living_situation": [
+   "Lives alone",
+   "Lives with group",
+   "Lives with relative or friend",
+   "Lives with spouse or partner",
+   "Missing",
+   "Other"
+  ],
+  "major_depressive_disorder": [
+   "Absent",
+   "Missing",
+   "Recent/Active"
+  ],
+  "marital_status": [
+   "Divorced",
+   "Living as married/domestic partner",
+   "Married",
+   "Missing",
+   "Never married",
+   "Other or unknown",
+   "Separated",
+   "Widowed"
+  ],
+  "migraine_chronic_headache": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "obesity_bmi30plus": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "osteoarthritis": [
+   "Missing",
+   "No",
+   "Not applicable (no reported arthritis)",
+   "Yes"
+  ],
+  "parkinsonism_pd": [
+   "Absent",
+   "Missing",
+   "Recent/Active"
+  ],
+  "peripheral_vascular_disease": [
+   "Absent",
+   "Missing",
+   "Recent/Active"
+  ],
+  "physical_activity_hrs_wk": [
+   "1 hour or less",
+   "2.5 hours or less",
+   "Missing",
+   "More than 2.5 hours"
+  ],
+  "race": [
+   "American Indian or Alaska Native",
+   "Asian",
+   "Black or African American",
+   "Missing",
+   "Native Hawaiian or Other Pacific Islander",
+   "Other",
+   "White"
+  ],
+  "residence_type": [
+   "Assisted living/adult family home/boarding home",
+   "Missing",
+   "Other or Unknown",
+   "Private residence",
+   "Retirement/independent group living",
+   "Skilled nursing/nursing home/hospital/hospice"
+  ],
+  "rheumatoid_arthritis": [
+   "Missing",
+   "No",
+   "Not applicable (no reported arthritis)",
+   "Yes"
+  ],
+  "seizures_epilepsy": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "sex": [
+   "Female",
+   "Male",
+   "Missing"
+  ],
+  "sleep_apnea": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "sleep_apnea_clinician": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "smoking_current_30days": [
+   "Missing",
+   "No",
+   "Not applicable",
+   "Yes"
+  ],
+  "smoking_ever_100cigs": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "smoking_packs_per_day_category": [
+   "0.5-<1 pack/day",
+   "1-<1.5 packs/day",
+   "1.5-<2 packs/day",
+   "2+ packs/day",
+   "<0.5 pack/day",
+   "Missing",
+   "Not applicable"
+  ],
+  "smoking_status_derived": [
+   "Current",
+   "Former",
+   "Missing",
+   "Never"
+  ],
+  "stroke": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "thyroid_disease": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "traumatic_brain_injury": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "type_2_diabetes": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "urinary_incontinence": [
+   "Missing",
+   "No",
+   "Yes"
+  ],
+  "vision_normal_1yes": [
+   "Missing",
+   "No (impaired)",
+   "Yes (normal)"
+  ],
+  "vitamin_b12_deficiency": [
+   "Absent",
+   "Missing",
+   "Recent/Active",
+   "Remote/Inactive"
+  ],
+  "cognitive_status": [
+   "Dementia",
+   "Impaired-not-MCI",
+   "MCI",
+   "Missing",
+   "Normal cognition"
+  ]
+ },
+ "missing_token": "Missing",
+ "numeric_reference": {
+  "age": {
+   "min": 18.0,
+   "p01": 41.0,
+   "median": 70.0,
+   "p99": 91.0,
+   "max": 109.0,
+   "pct_blank_train": 0.0
+  },
+  "bmi": {
+   "min": 10.7,
+   "p01": 18.4,
+   "median": 26.7,
+   "p99": 44.3,
+   "max": 68.6,
+   "pct_blank_train": 9.83969043670536
+  },
+  "bp_diastolic": {
+   "min": 30.0,
+   "p01": 52.0,
+   "median": 76.0,
+   "p99": 100.0,
+   "max": 140.0,
+   "pct_blank_train": 9.994472084024322
+  },
+  "bp_diastolic_avg": {
+   "min": 50.0,
+   "p01": 50.54,
+   "median": 78.0,
+   "p99": 91.65,
+   "max": 93.0,
+   "pct_blank_train": 99.84521835268104
+  },
+  "bp_systolic": {
+   "min": 70.0,
+   "p01": 98.0,
+   "median": 132.0,
+   "p99": 182.1900000000005,
+   "max": 229.0,
+   "pct_blank_train": 9.994472084024322
+  },
+  "bp_systolic_avg": {
+   "min": 110.0,
+   "p01": 110.81,
+   "median": 130.5,
+   "p99": 174.79000000000002,
+   "max": 181.0,
+   "pct_blank_train": 99.84521835268104
+  },
+  "education_years": {
+   "min": 0.0,
+   "p01": 6.0,
+   "median": 16.0,
+   "p99": 21.0,
+   "max": 29.0,
+   "pct_blank_train": 0.49198452183526814
+  },
+  "height_in": {
+   "min": 46.0,
+   "p01": 57.5,
+   "median": 65.5,
+   "p99": 75.0,
+   "max": 81.3,
+   "pct_blank_train": 9.27584300718629
+  },
+  "smoking_quit_age": {
+   "min": 9.0,
+   "p01": 18.0,
+   "median": 40.0,
+   "p99": 73.80000000000018,
+   "max": 100.0,
+   "pct_blank_train": 63.95245992260917
+  },
+  "smoking_years": {
+   "min": 0.0,
+   "p01": 1.0,
+   "median": 20.0,
+   "p99": 60.0,
+   "max": 80.0,
+   "pct_blank_train": 60.342730790491984
+  },
+  "weight_lb": {
+   "min": 66.0,
+   "p01": 102.0,
+   "median": 166.0,
+   "p99": 283.0,
+   "max": 400.0,
+   "pct_blank_train": 7.91044776119403
+  }
+ },
+ "pct_blank_train": {
+  "age": 0.0,
+  "alcohol_abuse_history": 0.5804311774461027,
+  "alcohol_binge_frequency": 99.88391376451078,
+  "alcohol_drinks_per_occasion": 99.88391376451078,
+  "alcohol_frequency_12mo": 99.88391376451078,
+  "alcohol_frequency_3mo": 60.342730790491984,
+  "anxiety": 59.977888336097294,
+  "arthritis_any": 59.90602542841349,
+  "bmi": 9.83969043670536,
+  "bowel_incontinence": 59.75677169707021,
+  "bp_diastolic": 9.994472084024322,
+  "bp_diastolic_avg": 99.84521835268104,
+  "bp_systolic": 9.994472084024322,
+  "bp_systolic_avg": 99.84521835268104,
+  "cancer_recent": 59.72360420121614,
+  "chronic_kidney_disease": 99.88391376451078,
+  "copd_asthma_combined": 99.88391376451078,
+  "depression": 1.2271973466003316,
+  "education_level": 0.49198452183526814,
+  "education_years": 0.49198452183526814,
+  "ethnicity_hispanic": 0.40906578220011053,
+  "hearing_normal_1yes": 3.2835820895522385,
+  "height_in": 9.27584300718629,
+  "hyperlipidemia": 1.1774461028192371,
+  "hypertension": 0.48645660585959094,
+  "independence_level": 0.11608623548922056,
+  "living_situation": 0.3427307904919845,
+  "major_depressive_disorder": 99.88391376451078,
+  "marital_status": 0.0,
+  "migraine_chronic_headache": 99.88391376451078,
+  "obesity_bmi30plus": 9.83969043670536,
+  "osteoarthritis": 60.35931453841902,
+  "parkinsonism_pd": 0.33720287451630737,
+  "peripheral_vascular_disease": 99.88391376451078,
+  "physical_activity_hrs_wk": 99.90049751243781,
+  "race": 0.6412382531785517,
+  "residence_type": 0.0,
+  "rheumatoid_arthritis": 60.35931453841902,
+  "seizures_epilepsy": 0.5085682697622996,
+  "sex": 0.01658374792703151,
+  "sleep_apnea": 61.116639027086784,
+  "sleep_apnea_clinician": 60.873410724157,
+  "smoking_current_30days": 1.337755666113875,
+  "smoking_ever_100cigs": 1.2935323383084576,
+  "smoking_packs_per_day_category": 2.996130458817026,
+  "smoking_quit_age": 63.95245992260917,
+  "smoking_status_derived": 1.337755666113875,
+  "smoking_years": 60.342730790491984,
+  "stroke": 0.3206191265892758,
+  "thyroid_disease": 0.978441127694859,
+  "traumatic_brain_injury": 1.006080707573245,
+  "type_2_diabetes": 0.3869541182974019,
+  "urinary_incontinence": 59.75124378109453,
+  "vision_normal_1yes": 3.565505804311774,
+  "vitamin_b12_deficiency": 2.6478717523493644,
+  "weight_lb": 7.91044776119403,
+  "cognitive_status": 0.0
+ },
+ "era_linked_features": [
+  "alcohol_frequency_3mo",
+  "anxiety",
+  "arthritis_any",
+  "bowel_incontinence",
+  "cancer_recent",
+  "osteoarthritis",
+  "rheumatoid_arthritis",
+  "sleep_apnea",
+  "sleep_apnea_clinician",
+  "urinary_incontinence"
+ ],
+ "level_counts_train": {
+  "alcohol_abuse_history": {
+   "Absent": 17137,
+   "Remote/Inactive": 710,
+   "Recent/Active": 138,
+   "Missing": 105
+  },
+  "alcohol_binge_frequency": {
+   "Missing": 18069,
+   "Never": 13,
+   "Not applicable": 5,
+   "Monthly": 2,
+   "Less than once a month": 1
+  },
+  "alcohol_drinks_per_occasion": {
+   "Missing": 18069,
+   "1-2 drinks": 13,
+   "Not applicable": 5,
+   "3-4 drinks": 3
+  },
+  "alcohol_frequency_12mo": {
+   "Missing": 18069,
+   "2-3 times a week": 6,
+   "Never": 5,
+   "2-4 times a month": 4,
+   "Monthly or less": 3,
+   "4 or more times a week": 3
+  },
+  "alcohol_frequency_3mo": {
+   "Missing": 10916,
+   "Not applicable - no alcohol consumption in the last three months": 2294,
+   "A few times a week": 1284,
+   "Daily or almost daily": 1125,
+   "About once a week": 944,
+   "About once a month": 841,
+   "Less than once a month": 686
+  },
+  "anxiety": {
+   "Missing": 10850,
+   "Absent": 5631,
+   "Recent/Active": 1363,
+   "Remote/Inactive": 246
+  },
+  "arthritis_any": {
+   "Missing": 10837,
+   "Recent/Active": 3727,
+   "Absent": 3446,
+   "Remote/Inactive": 80
+  },
+  "bowel_incontinence": {
+   "Missing": 10810,
+   "No": 7065,
+   "Yes": 215
+  },
+  "cancer_recent": {
+   "Missing": 10804,
+   "No": 6229,
+   "Yes": 1057
+  },
+  "chronic_kidney_disease": {
+   "Missing": 18069,
+   "Absent": 20,
+   "Recent/Active": 1
+  },
+  "copd_asthma_combined": {
+   "Missing": 18069,
+   "Absent": 18,
+   "Recent/Active": 3
+  },
+  "depression": {
+   "No": 12201,
+   "Yes": 5667,
+   "Missing": 222
+  },
+  "education_level": {
+   "Bachelor's degree": 4857,
+   "Master's degree": 4528,
+   "Some college": 3366,
+   "High school or GED": 2448,
+   "Doctorate": 2020,
+   "Less than high school": 782,
+   "Missing": 89
+  },
+  "ethnicity_hispanic": {
+   "No": 16527,
+   "Yes": 1489,
+   "Missing": 74
+  },
+  "hearing_normal_1yes": {
+   "Yes (normal)": 13860,
+   "No (impaired)": 3636,
+   "Missing": 594
+  },
+  "hyperlipidemia": {
+   "Absent": 8823,
+   "Recent/Active": 8522,
+   "Remote/Inactive": 532,
+   "Missing": 213
+  },
+  "hypertension": {
+   "Absent": 9309,
+   "Recent/Active": 8195,
+   "Remote/Inactive": 498,
+   "Missing": 88
+  },
+  "independence_level": {
+   "Able to live independently": 15761,
+   "Requires assistance-complex activities": 1573,
+   "Requires assistance-basic activities": 541,
+   "Completely dependent": 135,
+   "Other or unknown": 59,
+   "Missing": 21
+  },
+  "living_situation": {
+   "Lives with spouse or partner": 11028,
+   "Lives alone": 4939,
+   "Lives with relative or friend": 1286,
+   "Lives with group": 647,
+   "Other": 128,
+   "Missing": 62
+  },
+  "major_depressive_disorder": {
+   "Missing": 18069,
+   "Absent": 20,
+   "Recent/Active": 1
+  },
+  "marital_status": {
+   "Married": 11212,
+   "Widowed": 2651,
+   "Divorced": 2375,
+   "Never married": 1165,
+   "Living as married/domestic partner": 331,
+   "Separated": 215,
+   "Other or unknown": 141
+  },
+  "migraine_chronic_headache": {
+   "Missing": 18069,
+   "Absent": 17,
+   "Remote/Inactive": 3,
+   "Recent/Active": 1
+  },
+  "obesity_bmi30plus": {
+   "No": 11791,
+   "Yes": 4519,
+   "Missing": 1780
+  },
+  "osteoarthritis": {
+   "Missing": 10919,
+   "Yes": 3612,
+   "Not applicable (no reported arthritis)": 3343,
+   "No": 216
+  },
+  "parkinsonism_pd": {
+   "Absent": 17587,
+   "Recent/Active": 442,
+   "Missing": 61
+  },
+  "peripheral_vascular_disease": {
+   "Missing": 18069,
+   "Absent": 20,
+   "Recent/Active": 1
+  },
+  "physical_activity_hrs_wk": {
+   "Missing": 18072,
+   "More than 2.5 hours": 12,
+   "1 hour or less": 4,
+   "2.5 hours or less": 2
+  },
+  "race": {
+   "White": 14229,
+   "Black or African American": 2816,
+   "Asian": 536,
+   "Other": 238,
+   "American Indian or Alaska Native": 144,
+   "Missing": 116,
+   "Native Hawaiian or Other Pacific Islander": 11
+  },
+  "residence_type": {
+   "Private residence": 16581,
+   "Retirement/independent group living": 1011,
+   "Other or Unknown": 320,
+   "Assisted living/adult family home/boarding home": 137,
+   "Skilled nursing/nursing home/hospital/hospice": 41
+  },
+  "rheumatoid_arthritis": {
+   "Missing": 10919,
+   "No": 3657,
+   "Not applicable (no reported arthritis)": 3343,
+   "Yes": 171
+  },
+  "seizures_epilepsy": {
+   "Absent": 17561,
+   "Remote/Inactive": 318,
+   "Recent/Active": 119,
+   "Missing": 92
+  },
+  "sex": {
+   "Female": 10769,
+   "Male": 7318,
+   "Missing": 3
+  },
+  "sleep_apnea": {
+   "Missing": 11056,
+   "Absent": 5469,
+   "Recent/Active": 1448,
+   "Remote/Inactive": 117
+  },
+  "sleep_apnea_clinician": {
+   "Missing": 11012,
+   "No": 5643,
+   "Yes": 1435
+  },
+  "smoking_current_30days": {
+   "Not applicable": 10376,
+   "No": 6708,
+   "Yes": 764,
+   "Missing": 242
+  },
+  "smoking_ever_100cigs": {
+   "No": 10376,
+   "Yes": 7480,
+   "Missing": 234
+  },
+  "smoking_packs_per_day_category": {
+   "Not applicable": 10377,
+   "<0.5 pack/day": 2537,
+   "0.5-<1 pack/day": 2229,
+   "1-<1.5 packs/day": 1295,
+   "2+ packs/day": 574,
+   "Missing": 542,
+   "1.5-<2 packs/day": 536
+  },
+  "smoking_status_derived": {
+   "Never": 10376,
+   "Former": 6708,
+   "Current": 764,
+   "Missing": 242
+  },
+  "stroke": {
+   "Absent": 17424,
+   "Remote/Inactive": 434,
+   "Recent/Active": 174,
+   "Missing": 58
+  },
+  "thyroid_disease": {
+   "Absent": 14584,
+   "Recent/Active": 2876,
+   "Remote/Inactive": 453,
+   "Missing": 177
+  },
+  "traumatic_brain_injury": {
+   "No": 15691,
+   "Yes": 2217,
+   "Missing": 182
+  },
+  "type_2_diabetes": {
+   "Absent": 15666,
+   "Recent/Active": 2224,
+   "Remote/Inactive": 130,
+   "Missing": 70
+  },
+  "urinary_incontinence": {
+   "Missing": 10809,
+   "No": 6330,
+   "Yes": 951
+  },
+  "vision_normal_1yes": {
+   "No (impaired)": 12109,
+   "Yes (normal)": 5336,
+   "Missing": 645
+  },
+  "vitamin_b12_deficiency": {
+   "Absent": 16580,
+   "Recent/Active": 741,
+   "Missing": 479,
+   "Remote/Inactive": 290
+  },
+  "cognitive_status": {
+   "Normal cognition": 12316,
+   "MCI": 3169,
+   "Dementia": 1637,
+   "Impaired-not-MCI": 968
+  }
+ },
+ "description": "Train-only preprocessing: numeric blank -> TRAIN median; categorical blank/unknown -> 'Missing' level; categories fixed to the TRAIN vocabulary; column order = feature_order."
+}
